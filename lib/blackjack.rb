@@ -3,11 +3,11 @@ def welcome
 end
 
 def deal_card
-  rand(11)1
+  card = rand(1..11)
 end
 
-def display_card_total(card)
-  puts "Your cards add up to #{card}"
+def display_card_total(card_total)
+  puts "Your cards add up to #{card_total}"
 end
 
 def prompt_user
@@ -19,11 +19,11 @@ def get_user_input
 end
 
 def end_game
-  # code #end_game here
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
-  # code #initial_round here
+  
 end
 
 def hit?
