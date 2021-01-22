@@ -37,9 +37,11 @@ def hit?(card_total)
     card_total += deal_card
   elsif
     user_input == 's'
-    card_total
+    prompt_user
   else
     invalid_command
+    prompt_user
+    get_user_input
   end
 end
 
